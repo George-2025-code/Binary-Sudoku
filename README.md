@@ -1,2 +1,10 @@
-# Binary-Sudoku
-A minimalist 6x6 Binary Sudoku game built with Raylib, support desktop and Web browser play. No data storage, classic binary sudoku rules, auto generate unique puzzle, smooth transition animation and friendly UI.
+# Binary Sudoku
+一款基于 Raylib 开发的 6×6 二进制数独小游戏
+
+## 游戏特色
+- 经典 6×6 二元数独规则：每行每列红蓝格子不连续超过 3 个、数量均等、行列不重复
+- 程序自动生成**唯一解**合法谜题
+- 开局动画、切换转场动画、胜利自动刷新新局
+- 简洁浅色主页 + 游戏棋盘界面
+- 无需本地存档，纯单机轻量小游戏
+- 一键编译适配 Web 网页，可直接浏览器打开游玩
