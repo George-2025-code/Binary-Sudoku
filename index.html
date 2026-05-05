@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Binary Sudoku</title>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        background: #1a1a1a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+    }
+    canvas {
+        display: block;
+        outline: none;
+        border: none;
+    }
+</style>
+</head>
+<body>
+<canvas id=canvas></canvas>
+
+<script>
+var canvasElement = document.getElementById("canvas");
+canvasElement.addEventListener("webglcontextlost", e => {
+    alert("WebGL context lost. Reload page.");
+    e.preventDefault();
+}, !1);
+
+var Module = {
+    print: () => {},
+    printErr: () => {},
+    canvas: canvasElement,
+    setStatus: () => {},
+    monitorRunDependencies: () => {}
+};
+</script>
+<script async src=index.js></script>
+</body>
+</html>
